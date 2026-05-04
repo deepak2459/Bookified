@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HeroSection from "@/components/ui/HeroSection";
 
 export default function Home() {
   return (
-   <>
-     <div>hello this is bookified app</div>
-   </>
+    <main className="container">
+      <HeroSection />
+    </main>
   );
 }
