@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -177,7 +176,7 @@
     @apply max-w-7xl px-5 mx-auto w-full;
   }
   .container {
-    @apply pt-[106px] pb-18 min-h-screen;
+    @apply pt-[94px] pb-18 min-h-screen;
   }
   .navItem {
     @apply px-1 sm:px-3 text-sm sm:text-base font-medium flex items-center cursor-pointer text-[var(--text-primary)];
@@ -487,36 +486,29 @@
   /* ===========================================
      BOOKS LIBRARY COMPONENT
      =========================================== */
-  .library-hero-section {
-    @apply w-full;
-  }
   .library-hero-card {
-    @apply w-full bg-[#f3e4c7] rounded-[8px] min-h-[250px] px-6 py-8 md:px-10 lg:px-12 xl:px-14 lg:py-9 relative overflow-hidden flex items-center;
+    @apply bg-[#f3e4c7] rounded-[14px] p-5 md:p-6 lg:py-6 lg:px-10 relative overflow-hidden flex items-center;
   }
   .library-hero-content {
-    @apply flex flex-col items-center text-center lg:items-center lg:text-left lg:flex-row lg:justify-between gap-7 lg:gap-8 w-full;
+    @apply flex flex-col items-center text-center lg:items-center lg:text-left lg:flex-row lg:justify-between gap-4 lg:gap-6 w-full;
   }
   .library-hero-text {
-    @apply w-full lg:w-[39%] flex flex-col gap-4 items-center lg:items-start justify-center z-10;
+    @apply flex-1 max-w-full lg:max-w-[400px] flex flex-col gap-3 lg:gap-4 items-center lg:items-start justify-center z-10;
   }
   .library-hero-title {
-    @apply text-[34px] md:text-[40px] font-bold text-black leading-tight font-serif;
+    @apply text-[26px] md:text-3xl lg:text-4xl font-semibold text-black tracking-[-0.02em] leading-[32px] md:leading-[42px] font-serif;
   }
   .library-hero-description {
-    @apply text-base md:text-[19px] text-[#3d485e] leading-7;
+    @apply text-sm md:text-base text-[#3d485e] leading-5 md:leading-6;
   }
   .library-hero-illustration {
-    @apply flex items-center justify-center mt-1 lg:hidden;
+    @apply flex items-center justify-center mt-2 lg:hidden;
   }
   .library-hero-illustration-desktop {
-    @apply hidden lg:flex items-center justify-center w-[31%];
-  }
-  .library-hero-illustration img,
-  .library-hero-illustration-desktop img {
-    @apply object-contain;
+    @apply hidden lg:flex items-center justify-center flex-1 max-w-[400px];
   }
   .library-cta-primary {
-    @apply inline-flex h-[60px] items-center justify-center gap-3 bg-white text-[var(--text-primary)] px-6 rounded-[8px] font-bold text-xl md:text-[22px] transition-all w-full sm:w-fit;
+    @apply inline-flex items-center justify-center gap-2 bg-white text-[var(--text-primary)] px-5 py-3 rounded-[10px] font-bold text-base md:text-xl transition-all w-full lg:w-fit;
     font-family: 'IBM Plex Serif', serif;
 
     &:hover {
@@ -534,24 +526,24 @@
     }
   }
   .library-steps-card {
-    @apply bg-white w-full max-w-[255px] px-5 py-5 rounded-[8px] flex flex-col gap-6;
+    @apply bg-white p-4 rounded-[10px];
     list-style: none;
   }
   .library-steps-card div {
     list-style: none;
   }
   .library-step-item {
-    @apply flex items-start gap-4;
+    @apply flex items-start gap-3;
     list-style: none;
   }
   .library-step-number {
-    @apply w-10 h-10 min-w-10 min-h-10 rounded-full bg-white border-2 border-black/55 text-[var(--text-primary)] flex items-center justify-center font-semibold text-base;
+    @apply w-8 h-8 min-w-8 min-h-8 rounded-full bg-[#fff6e5] border border-[var(--text-primary)] text-[var(--text-primary)] flex items-center justify-center font-semibold text-sm;
   }
   .library-step-title {
-    @apply font-bold text-lg text-[#222c37] leading-6;
+    @apply font-semibold text-base text-[#222c37] leading-6;
   }
   .library-step-description {
-    @apply font-normal text-base text-[#3d485e] leading-6 mt-1;
+    @apply font-normal text-sm text-[#222c37] leading-5;
   }
   .library-search-wrapper {
     @apply flex items-center bg-white border border-[var(--border-subtle)] rounded-lg overflow-hidden w-full sm:w-80;
